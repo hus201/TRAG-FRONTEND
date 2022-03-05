@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import "./includes/hexagons.css";
 .slick-slide{
     margin-left:  15px;
     margin-right:  15px;
@@ -36,3 +37,9 @@ font-family: 'Playfair Display', serif;
 		-5px -5px 10px rgba(0, 0, 0, 0.4);
 }
 
+#Archivements-Section{
+  background-color: #262012;
+}
+#NewsSection{
+  background-color: #222021;
+}
