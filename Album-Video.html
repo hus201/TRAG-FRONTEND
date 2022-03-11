@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>الانجازات -الاتحاد العربي</title>
+    <title>Base</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -23,12 +23,15 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="Css/Achivements.css">
-    
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <link  href="Css/includes/vjs-sea.css"  rel="stylesheet"    />
+    <link rel="stylesheet" href="Css/Album.css">
+
+
 </head>
 
 <body class="bg-dark">
-     <div id="Loading">
+    <div id="Loading">
         <div class="container text-center align-middle">
             <img src="Media/img/logo-png.png" alt="">
             <h2 class="loading-text">المملكة تجمعنا</h2>
@@ -36,7 +39,7 @@
     </div>
 <header>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow   p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow  p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
              <img src="Media/img/logo.jpg" class="logo-img">
         </a>
@@ -47,94 +50,117 @@
             <div class="navbar-nav  ms-auto p-4 p-lg-0"  >
                 <a href="index.html" class="nav-item nav-link">الصفحة الرئيسية</a>
                 <a href="Anouncments.html" class="nav-item nav-link">اعلانات</a>
-                <a href="Archivments.html" class="nav-item nav-link active">انجازاتنا</a>
+                <a href="Archivments.html" class="nav-item nav-link">انجازاتنا</a>
                 <a href="Album.html" class="nav-item nav-link">المعرض</a>
                 <a href="About.html" class="nav-item nav-link">من نحن</a>
             </div>
             <a href="#" id="header-btn" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">انضم لنا <i class="fa fa-arrow-left ms-3"></i></a>
         </div>
     </nav>
-    <section >
-        
-        <video id="background-video" autoplay loop muted >
-            <source src="Media/videos/ww1.mp4" type="video/mp4">
-        </video>
-        <audio loop autoplay >
-            <source src="Media/audio/background.mp3" type="audio/mpeg">
-        </audio>
 
-    </section>
 </header>
 <main  >
-    <ul id="hexGrid">
-        <li class="hex">
-          <div class="hexIn">
-            <a class="hexLink" href="#">
-              <img src="Media/img/logo.jpg" alt="" />
-              <h1>عنوان الانجاز</h1>
-              <p>ملخص بسيط عن الانجاز</p>
-            </a>
-          </div>
-        </li>
-        <li class="hex">
-          <div class="hexIn">
-            <a class="hexLink" href="#">
-              <img src="Media/img/logo.jpg" alt="" />
-              <h1>عنوان الانجاز</h1>
-              <p>ملخص بسيط عن الانجاز</p>
-            </a>
-          </div>
-        </li>
-        <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="Media/img/logo.jpg" alt="" />
-                <h1>عنوان الانجاز</h1>
-                <p>ملخص بسيط عن الانجاز</p>
-              </a>
+   <section class="container-fluid text-light py-5 " >
+    
+        
+        <video
+            id="my-video"
+            class="video-js vjs-theme-sea"
+            controls
+            preload="auto"
+            poster="Media/img/vd.jpg"
+            
+            data-setup='{ "techOrder": ["youtube","html5"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/H9aq3Wj1zsg"}],"youtube": { "iv_load_policy": "3", "customVars": { "wmode": "transparent" } }  }'
+        
+          >
+          </video>
+            
+            <div class="text-center my-3">
+               <a href="https://youtu.be/H9aq3Wj1zsg" class="btn btn-primary">شاهد على يوتيوب</a>
             </div>
-          </li>
+          
+           <div >
+               <div class="container-fluid h-100">
+                <h5 class="text-center">عنوان الفيديو هنا </h5>
+                <hr>
+                <p>تفاصيل  الفيديو </p>
+               </div>
+               
+           </div>
+      
+    
+   </section>
+   <section class="container-fluid py-5">
+    <div class="text-center h1 text-light mb-5"><span class="section-header">المزيد </span></div>
 
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="Media/img/logo.jpg" alt="" />
-                <h1>عنوان الانجاز</h1>
-                <p>ملخص بسيط عن الانجاز</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+            width="100%" height="225" alt="">
+            <a href="/Album-Video.html" class="stretched-link ">
+                
+            </a>
+          </div>
+        </div>
+        
+           
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+            width="100%" height="225" alt="">
+            <a href="/Album-Video.html" class="stretched-link ">
+                
+            </a>
+          </div>
+        </div>
+           
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+              width="100%" height="225" alt="">
+              <a href="/Album-Video.html" class="stretched-link ">
+                  
               </a>
             </div>
-          </li>
-          
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="Media/img/logo.jpg" alt="" />
-                <h1>عنوان الانجاز</h1>
-                <p>ملخص بسيط عن الانجاز</p>
+          </div>
+           
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+              width="100%" height="225" alt="">
+              <a href="/Album-Video.html" class="stretched-link ">
+                  
               </a>
             </div>
-          </li>
-          
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="Media/img/logo.jpg" alt="" />
-                <h1>عنوان الانجاز</h1>
-                <p>ملخص بسيط عن الانجاز</p>
+          </div>
+           
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+              width="100%" height="225" alt="">
+              <a href="/Album-Video.html" class="stretched-link ">
+                  
               </a>
             </div>
-          </li>
-          
-          <li class="hex">
-            <div class="hexIn">
-              <a class="hexLink" href="#">
-                <img src="Media/img/logo.jpg" alt="" />
-                <h1>عنوان الانجاز</h1>
-                <p>ملخص بسيط عن الانجاز</p>
+          </div>
+           
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Media/img/vd.jpg" class="bd-placeholder-img card-img-top" 
+              width="100%" height="225" alt="">
+              <a href="/Album-Video.html" class="stretched-link ">
+                  
               </a>
             </div>
-          </li>
-      </ul>
+          </div>
+           
+
+                      
+      
+      </div> 
+   </section>
 </main>
 
 <footer class="footer-dark">
@@ -163,9 +189,16 @@
             </div>
             <p class="copyright">Arabs Union © 2022-Present</p>
         </div>
-    <script src="Js/base.js"></script>
+      
+        
+       
+        <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+        <script src="Js/youtube.js"></script>
+        <script src="Js/base.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       
+
 </footer>
 
 

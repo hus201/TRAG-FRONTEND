@@ -43,6 +43,17 @@ $(document).ready(function(){
         focusOnSelect: true,
         verticalSwiping:true,
         vertical:true,
+        responsive: [
+            {breakpoint: 768,
+                settings:{
+                    verticalSwiping:false,
+                    vertical:false,
+                    arrows:true,
+                }
+            },
+  
+        ],
+
 
       });
       

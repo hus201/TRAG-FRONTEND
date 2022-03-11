@@ -115,9 +115,13 @@
   .hex {
     width: 20%; /* = 100 / 5 */
   }
-  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+  html[dir=ltr]  .hex:nth-child(9n+6){ /* first hexagon of even rows */
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
+  html[dir=rtl]  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-right:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+ 
 }
 
 @media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
@@ -127,8 +131,11 @@
   .hex {
     width: 25%; /* = 100 / 4 */
   }
-  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+  html[dir=ltr] .hex:nth-child(7n+5){ /* first hexagon of even rows */
     margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  }
+  html[dir=rtl] .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-right:12.5%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -139,8 +146,11 @@
   .hex {
     width: 33.333%; /* = 100 / 3 */
   }
-  .hex:nth-child(5n+4){ /* first hexagon of even rows */
+  html[dir=ltr] .hex:nth-child(5n+4){ /* first hexagon of even rows */
     margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+  }
+  html[dir=rtl] .hex:nth-child(5n+4){ /* first hexagon of even rows */
+    margin-right:16.666%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
@@ -151,8 +161,11 @@
   .hex {
     width: 50%; /* = 100 / 3 */
   }
-  .hex:nth-child(3n+3){ /* first hexagon of even rows */
+  html[dir=ltr] .hex:nth-child(3n+3){ /* first hexagon of even rows */
     margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+  }
+  html[dir=rtl] .hex:nth-child(3n+3){ /* first hexagon of even rows */
+    margin-right:25%;  /* = width of .hex / 2  to indent even rows */
   }
 }
 
