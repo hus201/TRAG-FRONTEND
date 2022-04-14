@@ -100,12 +100,24 @@
 
 
 /*** HOVER EFFECT  **********************************************************************/
-.hexLink:hover h1, .hexLink:focus h1,
+@media screen and (max-width:900px) {
+  .hexLink h1,
+.hexLink p{
+  -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0);
+}
+
+}
+@media screen and (min-width:900px) {
+  .hexLink:hover h1, .hexLink:focus h1,
 .hexLink:hover p, .hexLink:focus p{
   -webkit-transform:translate3d(0,0,0);
       -ms-transform:translate3d(0,0,0);
           transform:translate3d(0,0,0);
 }
+}
+
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 @media (min-width:1201px) { /* <- 5-4  hexagons per row */
@@ -137,6 +149,7 @@
   html[dir=rtl] .hex:nth-child(7n+5){ /* first hexagon of even rows */
     margin-right:12.5%;  /* = width of .hex / 2  to indent even rows */
   }
+  
 }
 
 @media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
@@ -152,6 +165,7 @@
   html[dir=rtl] .hex:nth-child(5n+4){ /* first hexagon of even rows */
     margin-right:16.666%;  /* = width of .hex / 2  to indent even rows */
   }
+
 }
 
 @media (max-width: 600px) { /* <- 2-1  hexagons per row */
@@ -167,10 +181,12 @@
   html[dir=rtl] .hex:nth-child(3n+3){ /* first hexagon of even rows */
     margin-right:25%;  /* = width of .hex / 2  to indent even rows */
   }
+
 }
 
 @media (max-width: 400px) {
     #hexGrid {
         font-size: 13px;
     }
+    
 }

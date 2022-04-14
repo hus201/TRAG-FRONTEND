@@ -1,6 +1,7 @@
 @import "header.css";
 @import "footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import "./includes/modal.css";
 body{
     font-family: 'Cairo', sans-serif;
 }
@@ -71,4 +72,12 @@ font-family: 'Playfair Display', serif;
 }
 .logo-img {
     height:10vh;
+}
+#Nav-Join{
+    visibility: hidden;
+}
+@media screen and (max-width:767px) {
+    #Nav-Join{
+        visibility: visible;
+    }
 }
