@@ -11,7 +11,9 @@
 }
  
 
-
+.news-card{
+  min-height: 70vh;
+ }
 #Archivements-Section{
   background-color: #262012;
 }

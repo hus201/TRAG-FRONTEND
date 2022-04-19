@@ -9,3 +9,14 @@
         height:230px;
     }
 }
+#my-img{
+    width: 80%;
+    height: 75vh;
+    margin: 0% 10%;
+    border: 30px solid transparent;
+    border-image:  url('../Media/img/frame.png');
+    border-image-repeat: stretch;
+    border-image-slice: 100;
+    
+    
+}
