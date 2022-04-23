@@ -17,3 +17,7 @@
         height: 30vh;
     }
   }
+#user-menu .dropdown-menu {
+  min-width: 12.4rem;
+  text-align: right;
+}
